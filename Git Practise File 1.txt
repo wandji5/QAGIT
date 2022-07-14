@@ -1,0 +1,143 @@
+Level 1 - Basic Git (After installation of Gitbash and setup of Github)
+
+Step 1 - 
+
+$ cd E:\Gitdemo
+
+$ mkdir demo1
+
+$ cd demo1
+
+$ git init
+
+$ git config --global user.name "Your Name"
+
+$ git config --global user.email "yourname@example.com"
+
+Step 2 - 
+
+$ touch main.txt
+
+$ touch contact.txt
+
+DO it locally - Open these 2 files and add some words to each
+
+$ git status
+
+$ git add -A
+
+$ git status
+
+Make change to main.txt and save it
+
+$ git status
+
+$ git commit -m "My first commit with 2 files"
+
+$ git status
+
+
+Step 3 - 
+
+Make change to contact.txt and save it
+
+$ git status
+
+$ git add -A
+
+$ git commit -m "My second commit with change to 2 file"
+
+$ git status
+
+
+Step 4 - 
+
+$ touch .gitignore
+
+<
+Add 2 lines in .gitignore file as - 
+hello.txt
+*.pyc
+>
+
+$ touch hello.txt
+
+$ touch hello.pyc
+
+$ touch hello1.pyc
+
+<Also do 1 modification in contact.txt>
+
+$ git status
+
+$ git add -A
+
+$ git status
+
+$ git commit -m "My third commit with change to 1 file and .gitignore"
+
+$ git status
+
+---------------------------------------------
+
+Step 5 - 
+
+$ git branch
+
+$ git branch feature
+
+$ git checkout feature
+
+$ git branch
+
+
+$ touch index.txt
+
+<Open the file and write something>
+
+$ git add -A
+
+$ git commit -m "feature commit"
+
+<Notice the folder at this stage having the index.txt>
+
+$ git branch
+
+$ git checkout master
+
+<Notice the change in folder vs what was before this command>
+
+$ git log 
+
+$ git checkout feature
+
+$ touch index1.txt
+
+$ git add -A
+
+$ git commit -m "feature commit"
+
+$ git log 
+
+$ git status 
+
+Step 6 - 
+
+$ git branch
+
+$ git checkout master
+
+$ git merge feature
+
+<Notice the change in folder vs what was before this command>
+
+EXERCISE - Create another branch and create some new files/edit and then merge with Master
+
+
+
+
+
+
+
+
+

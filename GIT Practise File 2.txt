@@ -1,0 +1,70 @@
+Level 2 - Advanced Git (After Level 1)
+
+Step 1 -
+
+Login to github.com
+
+Create a Repo with name as "QAGIT" as Public
+
+open Gitbash terminal 
+
+$ pwd
+
+$ cd ..
+
+$ mkdir Gitdemo2
+
+$ cd Gitdemo2
+
+$ git clone git@github.com:vmitt/word_cloud.git
+
+<Noitce in your folder on local system - all files being copied>
+
+
+Step 2 -
+
+Switch back to your original folder Gitdemo 
+
+$ git remote add origin git@github.com:vmitt/QAGIT.git
+
+$ git push -u origin master
+
+Refresh your github page and analyze it ...You will see all your local master branch files copied
+
+$ git checkout feature
+
+$ git push -u origin feature
+
+Refresh your github page and analyze it ...You will see all your local feature branch files copied with new branch on Github
+
+$ touch test.txt
+
+$ git status
+
+$ git add -A
+
+$ git commit -m "test for review"
+
+$ git push -u origin feature
+
+Refresh your github page and analyze it ...You will see added file in feature branch on Github
+
+Step 3 -
+
+On the Github page and under feature branch :: Select Compare and Pull Request
+
+Go for a review Pull 
+
+Add comments 
+
+Analyze it and lastly merge(approve and submit)
+
+Lastly go to Master Repo on Github and see this new file 
+
+ 
+
+Exercise - Create a new feature2 branch on Github and add a file and write some content on GUI ...Merge that with Master branch
+
+ 
+
+
